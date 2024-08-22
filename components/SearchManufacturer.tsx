@@ -20,7 +20,7 @@ const SearchManufacturer: React.FC<SearchManufacturerProps> = ({manufacturer , s
   
   return (
     <div className='search-manufacturer'>
-      <Combobox >
+      <Combobox value={manufacturer} onChange={setmanufacturer}>
         <div className='relative w-full'>
           <ComboboxButton className="absolute top-[14px]">
             <Image src="/car-logo.svg" alt='Car Logo' width={20} height={20} className='ml-4' />

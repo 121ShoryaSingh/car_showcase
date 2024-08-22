@@ -23,6 +23,7 @@ export default async function Home() {
             <CustomFilter />
             <CustomFilter />
           </div>
+        </div>
           {!isDataEmpty ? (
             <section>
               <div className="home__cars-wrapper">
@@ -30,13 +31,12 @@ export default async function Home() {
               </div>
             </section>
           ) : (
-            <div>
+            <div className="home__error-container">
               <h2 className="text-black text-xl font-bold">Oops, no results</h2>
               <p>{allCars?.message}</p>
             </div>
           )
         }
-        </div>
       </div>
     </main>
   );
